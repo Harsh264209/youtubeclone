@@ -1,23 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar'
+import Vnavbar from './components/Vnavbar'
+import Content from './components/Content'
+ 
+import  './App.css'
+import { useState } from 'react'
 
-function App() {
+
+
+
+ function App(){
+
+
+  const[mode,setMode]=useState('light')
+  const[text,setText]=useState('dark mode')
+
+
+function toggleHandler(){
+
+
+  if(mode=='light')
+  {
+    setMode('dark');
+    document.body.style.backgroundColor='rgb(16, 16, 16)';
+    setText('light mode')
+  }
+else{
+
+  setMode('light');
+  document.body.style.backgroundColor='white';
+  setText('dark mode')
+
+}
+
+
+
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Navbar mode={mode} toggle={toggleHandler} />
+      <div className="flex-container">
+      <Vnavbar mode={mode}   />
+     <Content mode={mode} />
+
+      </div>
+   
+     
     </div>
   );
 }

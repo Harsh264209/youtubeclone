@@ -1,3 +1,13 @@
+body{
+  padding: 0px;
+  margin: 0px;
+ 
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .App {
   text-align: center;
 }
@@ -7,11 +17,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -36,3 +41,265 @@
     transform: rotate(360deg);
   }
 }
+body{
+
+  position: relative;
+}
+
+ul{
+  list-style: none;
+}
+.V-navbar{
+margin-left: -58px;
+margin-top: 15px;
+}
+#p{
+margin-left: 29px;
+font-size: 10px;
+margin-top: 6px;
+}
+#p-3{
+  margin-left: 36px;
+  font-size: 10px;
+  margin-top: 6px;
+}
+#icon{
+  width: 26px;
+}
+#nav-icon{
+width: 26px;
+margin: 10px;
+
+}
+#mic{
+  width: 26px;
+  margin-left: 8px;
+ 
+}
+#search-icon{
+
+  width: 20px;
+}
+input{
+  width: 520px;
+  border-radius: 16px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 7px 16px;
+  
+  font-size: 17px;
+  border: 1px solid #d1deed;
+
+
+}
+input:focus {
+  border-color: #0e4b5c;
+}
+.input-btn{
+  margin-left: 150px;
+  
+}
+.nav-item:hover{
+
+  background-color: #eaeff5;
+  border-radius: 12px;
+ 
+}
+#offcanvasNavbar{
+
+  width: 240px;
+}
+#btn{
+ margin-left: 0px;
+ gap: 0px;
+  border-radius: 16px;
+  padding: 7px 22px;
+ font-size: 17px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+ 
+  border: 1px solid #d1deed;
+ 
+}
+#youtube{
+  position: absolute;
+  margin-left: 56px;
+  width: 98px;
+}
+#youtube1{
+
+  width: 120px;
+  margin: 0px;
+  padding: 0px;
+}
+.btn-container{
+
+  margin-top: 18px;
+  margin-left: 0px;
+  margin-bottom: 25px;
+  
+  
+}
+.btn{
+ padding: 4px 12px;
+ border-radius: 8px;
+  margin: 4px; 
+  color: #ebedee;
+}
+.card-container{
+
+  margin-left:0px;
+  margin-top: 15px;
+}
+
+.card{
+  border: none;
+  width: 320px;
+  
+}
+.card-body,p{
+  margin-left: 0px;
+}
+.card-body{
+
+  
+  padding: 0px;
+  margin:8px 0px;
+  margin-left: 0px;
+  text-align: left;
+  
+  
+}
+.nav-item{ 
+  display: flex;
+justify-content: left;
+align-items: center;
+padding: 0px;
+margin: 0px;
+margin-left: 0px; 
+
+
+  
+}
+.nav-item1{
+display: flex;
+justify-content: left;
+align-items: center;
+padding: 0px;
+margin: 0px;
+margin-left: 0px; 
+}
+
+a{
+  margin-left: 30px;
+}
+.row2{
+  margin-top: 20px;
+}
+.row1{
+  margin-top: 17px;
+}
+.flex-container{
+
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-toggle{
+  margin-left: 12px;
+
+border: none;
+box-sizing: border-box;
+background-color: none;
+background-color:white;
+ 
+}
+
+
+
+
+
+
+@media(max-width:560px){
+
+
+.V-navbar{
+  width: 80px;
+
+}
+
+.nav-bar{
+  display: none;
+}
+.btn-container{
+  display: none;
+}
+.card-container{
+  
+width: 550px;
+ 
+
+ 
+}
+
+.navbar{
+
+  width: 560px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* .input-btn{
+  display: none;
+} */
+input{
+  display: none;
+  width: 0px;
+} 
+#btn{
+  border: none;
+  
+  padding: 0px;
+  margin-right: 220px;
+}
+
+#search-icon{
+
+  background-color: white;
+  border-radius: 0px;
+  width: 28px;
+  
+}
+.left-icons{
+  display: none;
+}
+.row1{
+  display: flex;
+  flex-direction: column;
+  
+}
+.row2{
+
+  display: flex;
+  flex-direction: column;
+}
+.card{
+  width:450px;
+  margin-bottom: 8px;
+  
+}
+.card,img{
+
+  border-radius: 0px;
+}
+
+.card-body{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top: 10px;
+  margin-bottom: 22px;
+  margin-left: 66px;
+}
+}
+
